@@ -19,11 +19,11 @@ To prepare the development and test databases in MySQL:
 
 ```sql
 create database petstore_dev;
-create user 'petstore'@'localhost' identified by 'petstore';
-grant all on petstore_dev.* to 'petstore'@'localhost';
+create user 'petstore'@'%' identified by 'petstore';
+grant all on petstore_dev.* to 'petstore'@'%';
 create database petstore_test;
-create user 'testbot'@'localhost' identified by 'petstore';
-grant all on petstore_test.* to 'testbot'@'localhost';
+create user 'testbot'@'%' identified by 'petstore';
+grant all on petstore_test.* to 'testbot'@'%';
 ```
 
 ## Building

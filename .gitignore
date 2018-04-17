@@ -14,3 +14,7 @@ build
 .classpath
 .project
 .settings
+
+**/temp
+**/bin
+**/.vscode
